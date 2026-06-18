@@ -99,7 +99,7 @@ button:hover {
   box-shadow:
     0 30px 80px rgba(0, 0, 0, 0.48),
     inset 0 1px 0 rgba(255, 255, 255, 0.04);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .dossier-card::before {
@@ -200,15 +200,19 @@ button:hover {
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 18px;
   padding: 24px 0 18px;
+  z-index: 3;
 }
 
 .search-shell {
   display: grid;
   gap: 10px;
+  position: relative;
+  z-index: 5;
 }
 
 .search-stack {
   position: relative;
+  z-index: 6;
 }
 
 .search-row {
@@ -282,9 +286,14 @@ button:hover {
   padding: 10px;
   border: 1px solid var(--line);
   border-radius: 16px;
-  background: rgba(6, 10, 16, 0.98);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.4);
-  z-index: 10;
+  background:
+    linear-gradient(180deg, rgba(18, 28, 40, 0.98), rgba(8, 12, 19, 0.995));
+  box-shadow:
+    0 22px 60px rgba(0, 0, 0, 0.54),
+    0 0 0 1px rgba(146, 215, 255, 0.05);
+  backdrop-filter: blur(14px);
+  z-index: 30;
+  pointer-events: auto;
 }
 
 .autocomplete-option {

@@ -159,6 +159,11 @@ export default function App() {
     }, 120);
   }
 
+  function handleSuggestionMouseDown(event, countryName) {
+    event.preventDefault();
+    commitCountry(countryName);
+  }
+
   function handleSearchKeyDown(event) {
     if (event.key === 'ArrowDown') {
       event.preventDefault();
@@ -270,7 +275,7 @@ export default function App() {
                           ? 'autocomplete-option is-active'
                           : 'autocomplete-option'
                       }
-                      onMouseDown={() => commitCountry(countryName)}
+                      onMouseDown={(event) => handleSuggestionMouseDown(event, countryName)}
                     >
                       {countryName}
                     </button>
