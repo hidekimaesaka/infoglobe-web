@@ -1,0 +1,37 @@
+{
+  "pais": "Canada",
+  "bandeira": "https://flags.restcountries.com/v5/svg/ca.svg",
+  "capital": [
+    "Ottawa"
+  ],
+  "idiomas": [
+    "English",
+    "French (français)"
+  ],
+  "moedas": [
+    {
+      "codigo": "CAD",
+      "nome": "Canadian dollar",
+      "simbolo": "$"
+    }
+  ],
+  "populacao": 41575585,
+  "fronteiras": [
+    "USA"
+  ],
+  "area": 9984670,
+  "presidente_atual": "Prime Minister Mark Carney",
+  "imagem_presidente": "https://upload.wikimedia.org/wikipedia/commons/2/22/2025-11-14_InaugurationREM_Deux-Montagnes_Mark_Carney.jpg",
+  "personalidades": [
+    "Margaret Atwood",
+    "Wayne Gretzky",
+    "Terry Fox"
+  ],
+  "cultura": "Canada is known for its multicultural society, bilingual English-French heritage, Indigenous traditions, arts, hockey, and vast natural landscapes.",
+  "empresas": [
+    "Shopify",
+    "Royal Bank of Canada",
+    "Enbridge"
+  ],
+  "tipo_de_governo": "Federal parliamentary constitutional monarchy"
+}
